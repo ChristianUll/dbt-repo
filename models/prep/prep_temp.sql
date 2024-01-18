@@ -2,7 +2,7 @@ WITH --start the chain of CTEs
 
 temp_daily AS (
     SELECT * 
-    FROM {{ref('staging_temp')}}
+    FROM {{ref('staging_weather')}}
 ),
 add_weekday AS (
     SELECT *,
